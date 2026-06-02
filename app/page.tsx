@@ -151,7 +151,6 @@ export default async function HomePage() {
               </div>
               <span
                 style={{
-                  fontFamily: "'Orbitron', monospace",
                   fontWeight: 900,
                   fontSize: "0.85rem",
                   letterSpacing: "0.15em",
@@ -168,7 +167,7 @@ export default async function HomePage() {
                 display: "flex",
                 alignItems: "center",
                 gap: "24px",
-                fontFamily: "'Share Tech Mono', monospace",
+
                 fontSize: "0.68rem",
                 letterSpacing: "0.1em",
               }}
@@ -230,7 +229,6 @@ export default async function HomePage() {
 
             <div
               style={{
-                fontFamily: "'Share Tech Mono', monospace",
                 fontSize: "0.68rem",
                 color: "var(--muted)",
                 letterSpacing: "0.12em",
@@ -243,33 +241,30 @@ export default async function HomePage() {
             <h1
               className="glow-text cursor"
               style={{
-                fontFamily: "'Orbitron', monospace",
                 fontWeight: 900,
                 fontSize: "clamp(2.4rem, 6vw, 5rem)",
-                lineHeight: 1.05,
-                letterSpacing: "0.04em",
+                lineHeight: 1.2,
                 maxWidth: "18ch",
               }}
             >
-              DECODE
+              رمزگشایی
               <br />
-              THE CHAIN
+              زنجیره بلاکچین
             </h1>
 
             <p
               style={{
-                marginTop: "24px",
+                marginTop: "1.5rem",
                 maxWidth: "52ch",
-                fontFamily: "'Inter', sans-serif",
-                fontWeight: 300,
-                fontSize: "1rem",
+                fontWeight: 400,
+                fontSize: "1.1rem",
                 color: "var(--muted)",
-                lineHeight: 1.75,
+                lineHeight: 1.8,
               }}
             >
-              Deep-signal technical writing on EVM internals, smart contract
-              security, and the protocols reshaping decentralised
-              infrastructure.
+              نوشته‌های فنی و سیگنال‌های عمیق درباره ساختار ماشین مجازی اتریوم
+              (EVM)، امنیت قراردادهای هوشمند، و پروتکل‌هایی که زیرساخت‌های
+              غیرمتمرکز را تغییر می‌دهند.
             </p>
 
             {/* Stats row */}
@@ -279,7 +274,7 @@ export default async function HomePage() {
                 alignItems: "center",
                 gap: "40px",
                 marginTop: "40px",
-                fontFamily: "'Share Tech Mono', monospace",
+
                 fontSize: "0.68rem",
                 letterSpacing: "0.1em",
               }}
@@ -349,7 +344,6 @@ export default async function HomePage() {
               <Link
                 href="/articles"
                 style={{
-                  fontFamily: "'Share Tech Mono', monospace",
                   fontSize: "0.68rem",
                   letterSpacing: "0.12em",
                   color: "var(--muted)",
@@ -402,7 +396,6 @@ export default async function HomePage() {
         >
           <span
             style={{
-              fontFamily: "'Share Tech Mono', monospace",
               fontSize: "0.62rem",
               color: "var(--muted)",
               letterSpacing: "0.1em",
@@ -461,7 +454,6 @@ function SectionHeader({
       <div>
         <div
           style={{
-            fontFamily: "'Share Tech Mono', monospace",
             fontSize: "0.6rem",
             color: "var(--muted)",
             letterSpacing: "0.15em",
@@ -472,7 +464,6 @@ function SectionHeader({
         </div>
         <h2
           style={{
-            fontFamily: "'Orbitron', monospace",
             fontWeight: 700,
             fontSize: "1.15rem",
             letterSpacing: "0.12em",
@@ -483,7 +474,6 @@ function SectionHeader({
         </h2>
         <p
           style={{
-            fontFamily: "'Inter', sans-serif",
             fontSize: "0.8rem",
             color: "var(--muted)",
             marginTop: "2px",
@@ -494,7 +484,6 @@ function SectionHeader({
       </div>
       <div
         style={{
-          fontFamily: "'Share Tech Mono', monospace",
           fontSize: "0.6rem",
           color: "var(--muted)",
           letterSpacing: "0.1em",
@@ -563,7 +552,6 @@ function ArticleCard({ article, index }: { article: Article; index: number }) {
 
         <div
           style={{
-            fontFamily: "'Share Tech Mono', monospace",
             fontSize: "0.58rem",
             color: "var(--muted)",
             letterSpacing: "0.12em",
@@ -574,7 +562,6 @@ function ArticleCard({ article, index }: { article: Article; index: number }) {
 
         <h3
           style={{
-            fontFamily: "'Orbitron', monospace",
             fontWeight: 700,
             fontSize: "0.95rem",
             letterSpacing: "0.04em",
@@ -589,7 +576,6 @@ function ArticleCard({ article, index }: { article: Article; index: number }) {
         {article.description && (
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
               fontSize: "0.8rem",
               color: "var(--muted)",
               lineHeight: 1.6,
@@ -607,7 +593,7 @@ function ArticleCard({ article, index }: { article: Article; index: number }) {
           className="flex items-center justify-between mt-auto pt-3"
           style={{
             borderTop: "1px solid var(--border)",
-            fontFamily: "'Share Tech Mono', monospace",
+
             fontSize: "0.62rem",
             color: "var(--muted)",
             letterSpacing: "0.08em",
@@ -667,7 +653,6 @@ function PodcastCard({ episode, index }: { episode: Podcast; index: number }) {
       <div className="flex-1 min-w-0">
         <div
           style={{
-            fontFamily: "'Share Tech Mono', monospace",
             fontSize: "0.6rem",
             color: "var(--muted)",
             letterSpacing: "0.12em",
@@ -679,7 +664,6 @@ function PodcastCard({ episode, index }: { episode: Podcast; index: number }) {
 
         <h3
           style={{
-            fontFamily: "'Orbitron', monospace",
             fontWeight: 700,
             fontSize: "0.88rem",
             letterSpacing: "0.03em",
@@ -694,7 +678,6 @@ function PodcastCard({ episode, index }: { episode: Podcast; index: number }) {
         {episode.description && (
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
               fontSize: "0.78rem",
               color: "var(--muted)",
               lineHeight: 1.55,
@@ -711,7 +694,6 @@ function PodcastCard({ episode, index }: { episode: Podcast; index: number }) {
         <div
           className="flex items-center justify-between mt-3"
           style={{
-            fontFamily: "'Share Tech Mono', monospace",
             fontSize: "0.62rem",
             letterSpacing: "0.1em",
           }}
@@ -736,7 +718,7 @@ function EmptyTerminal({ message }: { message: string }) {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        fontFamily: "'Share Tech Mono', monospace",
+
         fontSize: "0.7rem",
         color: "var(--muted)",
         letterSpacing: "0.15em",
@@ -748,347 +730,3 @@ function EmptyTerminal({ message }: { message: string }) {
     </div>
   );
 }
-
-// ─── SUB-COMPONENTS ────────────────────────────────────────────────────────────
-
-// function SectionHeader({
-//   label,
-//   subtitle,
-//   index,
-// }: {
-//   label: string;
-//   subtitle: string;
-//   index: string;
-// }) {
-//   return (
-//     <div
-//       style={{
-//         borderBottom: "1px solid var(--border)",
-//         marginBottom: "24px",
-//         paddingBottom: "16px",
-//         display: "flex",
-//         alignItems: "flex-end",
-//         justifyContent: "space-between",
-//       }}
-//     >
-//       <div>
-//         <div
-//           style={{
-//             fontFamily: "'Share Tech Mono', monospace",
-//             fontSize: "0.6rem",
-//             color: "var(--muted)",
-//             letterSpacing: "0.15em",
-//             marginBottom: "4px",
-//           }}
-//         >
-//           [{index}]
-//         </div>
-//         <h2
-//           style={{
-//             fontFamily: "'Orbitron', monospace",
-//             fontWeight: 700,
-//             fontSize: "1.1rem",
-//             letterSpacing: "0.12em",
-//             color: "var(--green)",
-//           }}
-//         >
-//           {label}
-//         </h2>
-//         <p
-//           style={{
-//             fontFamily: "'Inter', sans-serif",
-//             fontSize: "0.8rem",
-//             color: "var(--muted)",
-//             marginTop: "2px",
-//           }}
-//         >
-//           {subtitle}
-//         </p>
-//       </div>
-//       <span
-//         style={{
-//           fontFamily: "'Share Tech Mono', monospace",
-//           fontSize: "0.6rem",
-//           color: "var(--muted)",
-//           letterSpacing: "0.1em",
-//         }}
-//       >
-//         STATUS: LIVE
-//       </span>
-//     </div>
-//   );
-// }
-
-// function ArticleCard({ article, index }: { article: any; index: number }) {
-//   // ── uses: id, title, slug, description, image_url, created_at ──
-//   const date = article.created_at
-//     ? new Date(article.created_at).toISOString().split("T")[0]
-//     : "—";
-
-//   return (
-//     <Link href={`/articles/${article.slug}`}>
-//       <article
-//         className="card-glow bracket"
-//         style={{
-//           background: "var(--panel)",
-//           padding: "24px",
-//           minHeight: "220px",
-//           display: "flex",
-//           flexDirection: "column",
-//           gap: "12px",
-//           height: "100%",
-//         }}
-//       >
-//         {/* Cover image — only rendered when image_url is present */}
-//         {article.image_url && (
-//           <div
-//             style={{
-//               overflow: "hidden",
-//               height: "120px",
-//               marginBottom: "4px",
-//               position: "relative",
-//             }}
-//           >
-//             <div
-//               style={{
-//                 position: "absolute",
-//                 inset: 0,
-//                 backgroundImage:
-//                   "repeating-linear-gradient(0deg, transparent, transparent 2px, #00000020 2px, #00000020 4px)",
-//                 zIndex: 1,
-//                 pointerEvents: "none",
-//               }}
-//             />
-//             <img
-//               src={article.image_url}
-//               alt={article.title}
-//               style={{
-//                 width: "100%",
-//                 height: "100%",
-//                 objectFit: "cover",
-//                 filter: "brightness(0.8) contrast(1.05)",
-//                 display: "block",
-//               }}
-//             />
-//           </div>
-//         )}
-
-//         {/* Index badge */}
-//         <div
-//           style={{
-//             fontFamily: "'Share Tech Mono', monospace",
-//             fontSize: "0.58rem",
-//             color: "var(--muted)",
-//             letterSpacing: "0.12em",
-//           }}
-//         >
-//           {String(index + 1).padStart(2, "0")} / ARTICLE
-//         </div>
-
-//         {/* Title */}
-//         <h3
-//           style={{
-//             fontFamily: "'Orbitron', monospace",
-//             fontWeight: 700,
-//             fontSize: "0.92rem",
-//             letterSpacing: "0.04em",
-//             color: "#e8f4e8",
-//             lineHeight: 1.4,
-//             flex: 1,
-//           }}
-//         >
-//           {article.title}
-//         </h3>
-
-//         {/* Description — maps to `description` column */}
-//         {article.description && (
-//           <p
-//             style={{
-//               fontFamily: "'Inter', sans-serif",
-//               fontSize: "0.8rem",
-//               color: "var(--muted)",
-//               lineHeight: 1.6,
-//               display: "-webkit-box",
-//               WebkitLineClamp: 2,
-//               WebkitBoxOrient: "vertical",
-//               overflow: "hidden",
-//             }}
-//           >
-//             {article.description}
-//           </p>
-//         )}
-
-//         {/* Footer meta */}
-//         <div
-//           style={{
-//             display: "flex",
-//             alignItems: "center",
-//             justifyContent: "space-between",
-//             marginTop: "auto",
-//             paddingTop: "12px",
-//             borderTop: "1px solid var(--border)",
-//             fontFamily: "'Share Tech Mono', monospace",
-//             fontSize: "0.62rem",
-//             color: "var(--muted)",
-//             letterSpacing: "0.08em",
-//           }}
-//         >
-//           <span>{date}</span>
-//           <span style={{ color: "var(--green)" }}>READ →</span>
-//         </div>
-//       </article>
-//     </Link>
-//   );
-// }
-
-// function PodcastCard({ episode, index }: { episode: any; index: number }) {
-//   // ── uses: id, title, slug, description, audio_url, duration, created_at ──
-
-//   // `duration` is stored as an integer (seconds) per the schema
-//   const duration = episode.duration
-//     ? `${Math.floor(episode.duration / 60)}:${String(episode.duration % 60).padStart(2, "0")}`
-//     : "—";
-
-//   const date = episode.created_at
-//     ? new Date(episode.created_at).toISOString().split("T")[0]
-//     : "—";
-
-//   return (
-//     <div
-//       className="card-glow bracket"
-//       style={{
-//         background: "var(--panel)",
-//         padding: "20px",
-//         display: "flex",
-//         gap: "16px",
-//         alignItems: "flex-start",
-//       }}
-//     >
-//       {/* Animated waveform icon */}
-//       <div
-//         style={{
-//           flexShrink: 0,
-//           width: "44px",
-//           height: "44px",
-//           border: "1px solid var(--green)",
-//           display: "flex",
-//           alignItems: "center",
-//           justifyContent: "center",
-//           gap: "2px",
-//           padding: "8px",
-//         }}
-//       >
-//         {[3, 6, 4, 7, 5, 6, 3].map((h, i) => (
-//           <div
-//             key={i}
-//             className="pulse"
-//             style={{
-//               width: "2px",
-//               height: `${h * 3}px`,
-//               background: "var(--green)",
-//               animationDelay: `${i * 0.15}s`,
-//             }}
-//           />
-//         ))}
-//       </div>
-
-//       <div style={{ flex: 1, minWidth: 0 }}>
-//         {/* Date label */}
-//         <div
-//           style={{
-//             fontFamily: "'Share Tech Mono', monospace",
-//             fontSize: "0.6rem",
-//             color: "var(--muted)",
-//             letterSpacing: "0.12em",
-//             marginBottom: "6px",
-//           }}
-//         >
-//           EPISODE · {date}
-//         </div>
-
-//         {/* Title */}
-//         <h3
-//           style={{
-//             fontFamily: "'Orbitron', monospace",
-//             fontWeight: 700,
-//             fontSize: "0.88rem",
-//             letterSpacing: "0.03em",
-//             color: "#e8f4e8",
-//             lineHeight: 1.35,
-//             marginBottom: "8px",
-//           }}
-//         >
-//           {episode.title}
-//         </h3>
-
-//         {/* Description — maps to `description` column */}
-//         {episode.description && (
-//           <p
-//             style={{
-//               fontFamily: "'Inter', sans-serif",
-//               fontSize: "0.78rem",
-//               color: "var(--muted)",
-//               lineHeight: 1.55,
-//               display: "-webkit-box",
-//               WebkitLineClamp: 2,
-//               WebkitBoxOrient: "vertical",
-//               overflow: "hidden",
-//             }}
-//           >
-//             {episode.description}
-//           </p>
-//         )}
-
-//         {/* Duration + play link */}
-//         <div
-//           style={{
-//             display: "flex",
-//             alignItems: "center",
-//             justifyContent: "space-between",
-//             marginTop: "12px",
-//             fontFamily: "'Share Tech Mono', monospace",
-//             fontSize: "0.62rem",
-//             letterSpacing: "0.1em",
-//           }}
-//         >
-//           <span style={{ color: "var(--muted)" }}>
-//             DURATION: <span style={{ color: "var(--green)" }}>{duration}</span>
-//           </span>
-//           <Link
-//             href={`/podcasts/${episode.slug}`}
-//             style={{
-//               color: "var(--green)",
-//               display: "flex",
-//               alignItems: "center",
-//               gap: "6px",
-//             }}
-//           >
-//             ▶ PLAY
-//           </Link>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// function EmptyTerminal({ message }: { message: string }) {
-//   return (
-//     <div
-//       style={{
-//         border: "1px solid var(--border)",
-//         padding: "40px",
-//         display: "flex",
-//         alignItems: "center",
-//         justifyContent: "center",
-//         fontFamily: "'Share Tech Mono', monospace",
-//         fontSize: "0.7rem",
-//         color: "var(--muted)",
-//         letterSpacing: "0.15em",
-//       }}
-//     >
-//       <span style={{ marginRight: "8px", color: "var(--green)" }}>$</span>
-//       {message}
-//       <span className="cursor" />
-//     </div>
-//   );
-// }

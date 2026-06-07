@@ -5,7 +5,6 @@ import { WagmiProvider, createConfig, http } from "wagmi";
 import { mainnet, base } from "wagmi/chains";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ConnectKitProvider, getDefaultConfig } from "connectkit";
-import "connectkit/styles.css";
 
 const walletConnectProjectId =
   process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID as string;
